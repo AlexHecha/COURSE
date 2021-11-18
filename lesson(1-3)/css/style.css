@@ -1,0 +1,656 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+/*nav,footer,header,aside{display: block;}*/
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+input::-webkit-input-placeholder { color: white; font-size: 20px; }
+/*--------------------*/
+
+/*First Block*/
+header {
+	background-image: url('../img/bgc.png');
+	background-repeat: no-repeat;
+	max-width: 100%;
+	height: 600px;
+	font-family: Montserrat;
+}
+
+.header__nav {
+	display: flex;
+	justify-content: center;
+}
+
+.menu-header__menu {
+	display: flex;
+	padding: 5%;
+	justify-content: center;
+}
+
+.menu-header__menu li {
+	padding: 3% 30%;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 150%;
+	text-align: center;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	font-size: calc(13px + 1 * ((100vw - 320px) / (1280 - 320)));
+}
+
+.menu-header__menu a {
+	color: #FFFFFF;
+}
+
+.buttons {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	padding-top: 24%;
+}
+
+.button {
+	text-align: center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	background: #998431;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 30px;
+	color: #FFFFFF;
+	margin: 0 20px;
+}
+
+/*Second Block*/
+.wine {
+	width: 100%;
+	height: 856px;
+	background: rgba(40, 40, 40, 1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 2%;
+}
+
+.box-wine {
+	width: 1110px;
+	height: 656px;
+	border: 3px solid #C4C4C4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0 12%;
+}
+
+.box-wine h2 {
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 150%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 36px;
+}
+
+.box-wine hr {
+	margin: 5% 0 0 0;
+	border:solid 1px #FFFFFF;
+	width: 160px;
+	color: #FFFFFF;
+	height: 1px;
+}
+
+.box-wine p {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: calc(13px + 3 * ((100vw - 320px) / (1280 - 320))); /*16px*/
+	line-height: 150%;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 5% 0;
+}
+
+.box-wine img {
+	max-width: 160px;
+}
+
+/*Third Block*/
+.collections {
+	width: 100%;
+	height: 1038px;
+	background: #E6E3C4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box-collections {
+	width: 80%;
+	height: 878px;
+	border-top: 1px solid #998431;
+	border-bottom: 1px solid #998431;
+	display: flex;
+	justify-content: space-between;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	order: 1;
+}
+
+.heading p {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: calc(13px + 3 * ((100vw - 320px) / (1280 - 320))); /*16px*/
+	line-height: 150%;
+	color: #000000;
+	padding: 5% 0;
+}
+
+.heading h2 {
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: calc(18px + 18 * ((100vw - 320px) / (1280 - 320))); /*36px*/
+	line-height: 150%;
+	color: #282828;
+}
+
+.description hr {
+	border:solid 1px #282828;
+	width: 160px;
+	color: #FFFFFF;
+	height: 1px;
+	margin: 5% 0;
+}
+
+.wine-desc p {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: calc(7px + 7 * ((100vw - 320px) / (1280 - 320))); /*14px*/
+	line-height: 150%;
+	color: #282828;
+	padding-top: 5%;
+	padding-right: 20%;
+}
+
+.description img {
+	padding: 5% 0;
+	max-width: 100%;
+}
+
+.desc {
+	width: 254px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #998431;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #FFFFFF
+	padding: 5% 0;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.photo {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	order: 2;
+}
+
+.block_2p {
+	display: flex;
+	padding-top: 5%;
+	justify-content: center;
+}
+
+.block_2p img {
+	padding: 0 3%;
+}
+
+/*Fourth Block*/
+.tasting {
+	width: 100%;
+	height: 767px;
+	background-color: #282828;
+	display: flex;
+	justify-content: center;
+}
+
+.tasting_form{
+	display: flex;
+	justify-content: center;
+	width: 1110px;
+	height: 538px;
+	border: 3px solid #C4C4C4;
+	margin-top: 120px;
+	z-index: 1;
+}
+
+
+.line1{
+	position: absolute	;
+	width: 100px;
+	height: 2px;
+	background-color: #ffffff;
+	margin-top: 80px;
+}
+
+.describe_form{
+	color: #ffffff;
+	width: 539px;
+	text-align: center;
+	margin-top: 150px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 150%;
+	position: absolute;
+}
+
+textarea, input {
+    font-size: 20px;	
+    color: #ffffff;
+    font-family: Montserrat;
+	font-style: normal;
+}
+
+textarea:focus, input:focus {
+	color: #ffffff;
+}
+
+.inputs{
+ 	position: absolute;
+ 	margin-top: 250px;
+}
+
+.items_i{
+	margin: 0 40px;
+}
+
+.input_name{
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	background-color: transparent;
+	color: inherit;
+}
+
+.input_number{
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	background-color: transparent;
+	color: inherit;
+}
+
+
+.input_more{
+	position: absolute;
+	margin-top: 340px;
+}
+
+.input_adress{
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	background-color: transparent;
+	color: inherit;
+	width: 587px;
+}
+
+.entering{
+	background-color: transparent;
+	position: absolute;
+	margin-top: 410px;
+	padding: 30px 212px;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	font-size: 180%;
+}
+
+.grape{
+	position: absolute;
+	z-index: 2;
+	margin-right: 1000px;
+	margin-top: 40px;
+}
+
+.tasting_items p{
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 150%;
+	padding: 10px 50px;
+	position: absolute;
+	background: #282828;
+	z-index: 2;
+	margin-left: 310px;
+	color: #ffffff;
+	margin-top: 80px;
+}
+
+.wine_box{
+	margin-top: 60px;
+	position: absolute;
+	margin-left: 920px;
+	z-index: 2;
+}
+
+.footer{
+	display: flex;
+	justify-content: center;
+	background-color: #998431;
+}
+
+/*.info_table{
+	display: flex;
+	justify-content: space-between;
+}*/	
+
+.info_table ul{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 150%;
+	color: #ffffff;
+}
+
+.row1 ul{
+	margin-top: 40px;
+	display: flex;
+	width: 1110px;
+	justify-content: space-between;
+	padding: 20px;
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+}
+
+.row2 ul{
+	font-weight: 600;
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 1px solid white;
+	padding: 20px;
+	margin-bottom: 40px;
+}
+
+.social_media{
+	margin-left: 10px;
+}
+
+.lines{
+	width: 1px;
+	border-left: 1px solid #ffffff;
+}
+
+/*Media-requests*/
+
+
+
+/*-----------1920px-------------*/
+
+
+
+@media(min-width: 1920px){
+	.row1 ul{
+		width: 1510px;
+		margin-top: 80px;
+	}
+
+	
+
+	.row2 ul{
+		margin-bottom: 80px;
+	}	
+
+	.info_table ul{
+		font-size: 28px;
+	}
+
+	.social_media{
+		width: 40px;
+		height: 30px;
+	}
+
+	.buttons {
+		padding-top: 13%;
+	}
+
+	.menu-header__menu li {
+		padding: 3% 20%;
+		font-size: calc(23px + 1 * ((100vw - 320px) / (1280 - 320)));
+	}
+
+	.wine{
+		height: 1300px;
+	}
+
+	.box-wine{
+		width: 95%;
+		height: 1000px;
+	}
+
+	.button {
+		font-size: 30px;
+		padding: 30px 55px;
+		margin: 0 20px;
+	}
+
+	.wine-desc p{
+		font-size: 180%;
+	}	
+
+	.heading p{
+		font-size: 220%;
+	}
+
+	.desc {
+		width: 320px;
+		height: 120px;
+		font-size: 140%;
+	}
+
+	.box-wine h2{
+		font-size: 70px;
+	}
+
+	.box-wine p{
+		font-size: 30px;
+	}
+
+	.box-wine img{
+		max-width: 250px;
+	}
+
+	.collections{
+		height: 1200px;
+	}
+
+	.desc {
+		width: 254px;
+		height: 50px;
+		padding: 0% 0;
+		margin-top: 1%;
+		margin-bottom: 1%;
+	}
+
+	.description img{
+		width: 700px;
+		height: 470px;
+	}
+
+	.box-collections {
+		height: 1000px;
+	}
+
+	.grape{
+		left: 350px;
+	}
+
+	.collections{
+		height: 1500px;
+	}
+
+	.box-collections{
+		height: 1300px;
+	}
+
+	.tasting{
+		height: 950px;
+	}
+
+	.tasting_form{
+		margin-top: 125px;
+		width: 1200px;
+		height: 700px;
+	}	
+
+}
+
+
+/*-----------1400px-------------*/
+
+
+@media(max-width: 1400px){
+	.grape{
+		left: 100px;
+	}
+}
+
+
+/*-----------768px-------------*/
+
+
+@media(max-width: 768px){
+	.buttons{
+		padding-top: 50%;
+	}
+
+	.menu-header__menu li {
+		padding: 3% 12%;
+		font-size: calc(18px + 1 * ((100vw - 320px) / (1280 - 320)));
+	}
+
+	.button {
+		font-size: 18px;
+		padding: 30px 55px;
+		margin: 0 20px;
+	}	
+
+	.box-wine h2{
+		font-size: 45px;
+	}
+
+	.box-wine p{
+		font-size: 23px;
+	}
+
+	.wine{
+		height: 1200px;
+	}
+
+	.box-wine{
+		height: 1000px;
+	}
+
+	.collections{
+		height: 1900px;
+	}
+
+	.box-collections{
+		height: 1700px;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.heading {
+		text-align: center;
+		margin-left: 150px;
+	}
+
+	.heading p{
+		text-align: center;
+		font-size: 200%;
+	}
+
+	.heading h2{
+		font-size: 300%;
+	}
+
+	.wine-desc p{
+		font-size: 110%;
+	}
+
+	.box-collections hr{
+		margin-left: 240px;
+	}
+
+	.description img, .wine-desc{
+		text-align: center;
+		margin-left: 100px;
+	}
+
+	.desc{
+		margin-left: 175px;
+	}
+
+	.wine_box, .grape{
+		overflow: hidden;
+	}
+
+	.wine_box img{
+		position: absolute;
+		margin-left: 0;
+	}
+
+	.tasting_items p{
+		text-align: center;
+		right: 220px;
+	}
+}
