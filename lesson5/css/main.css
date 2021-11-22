@@ -1,0 +1,19 @@
+body{
+    background-color: gray;
+}
+
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#mydivheader {
+    padding: 15px;
+    font-size: 30px;
+    cursor: move;
+    z-index: 10;
+    background-color: 3df23a;
+    color: #fff;
+}
