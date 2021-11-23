@@ -1,7 +1,7 @@
 dragElement(document.getElementById(("mydiv")));
 
 function dragElement(elmnt) {
-  var position1 = 0, position2 = 0, position3 = 0, position4 = 0;
+  var pos = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   
   if (document.getElementById(elmnt.id + "header")) {
     document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
